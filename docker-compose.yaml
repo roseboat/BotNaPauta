@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  bot:
+    build: .
+    volumes:
+      - 'deps:/usr/src/bot/node_modules'
+      - './:/usr/src/bot'
+
+volumes:
+  deps:
